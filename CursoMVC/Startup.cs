@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CursoMVC.Models;
 
 namespace CursoMVC
 {
@@ -24,6 +25,8 @@ namespace CursoMVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //injeta class de configuracao da base de dados
+            services.AddDbContext<Contexto>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

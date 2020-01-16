@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace CursoMVC.Models
 {
-    public class Categoria
+    public class Produtos
     {
-        public int id { get; set; }
-        public string Descricao { get; set; }
+        public int Id { get; set; }
     }
 }
